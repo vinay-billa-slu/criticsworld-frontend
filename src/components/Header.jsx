@@ -5,7 +5,7 @@ import { useMovieContext } from "./ContextAPI";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [search, setSearch] = useState("");
 
   const navigate = useNavigate();
@@ -76,18 +76,6 @@ const Header = () => {
                 </button>
               </div>
             )}
-
-            <button
-              className="search-btn"
-              onClick={() => {
-                setSearch("");
-                setShow((prev) => !prev);
-              }}
-            >
-              <ion-icon
-                name={!show ? "search-outline" : "close-outline"}
-              ></ion-icon>
-            </button>
 
             <div className="lang-wrapper">
               <label for="language">
