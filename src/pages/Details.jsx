@@ -6,6 +6,7 @@ import Loader from "../components/Loader";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useMovieContext } from "../components/ContextAPI";
+import ReviewComponent from "../components/ReviewComponent";
 
 const Details = () => {
   const quality = "4K";

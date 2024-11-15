@@ -15,6 +15,8 @@ import Protected from "./components/Protected";
 import AdminProtected from "./components/AdminProtected";
 import ResetPassword from "./pages/ResetPassword";
 import ForgotPassword from "./pages/ForgotPassword";
+import Search from "./pages/Search";
+import EditMovie from "./pages/EditMovie";
 
 const App = () => {
   return (
@@ -29,10 +31,12 @@ const App = () => {
         <Route path="/" element={<Protected />}>
           <Route path="/" element={<Home />} />
           <Route path="/details/:id/:title" element={<Details />} />
+          <Route path="/search/:keyword" element={<Search />} />
         </Route>
 
         <Route path="/" element={<AdminProtected isAdmin={1} />}>
           <Route path="/addmovie" element={<AddMovie />} />
+          <Route path="/editMovie/:id" element={<EditMovie />} />
         </Route>
 
         <Route path="*" element={<Page404 />} />
