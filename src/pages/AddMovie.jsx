@@ -54,7 +54,8 @@ const AddMovie = () => {
       });
       toast.success("Movie added");
       setTimeout(() => {
-        window.location.reload();
+        // window.location.reload();
+        window.location = 'http://localhost:5173/'
       }, 1000);
     } catch (error) {
       toast.error(error.message);
@@ -146,19 +147,17 @@ const AddMovie = () => {
                   ref={actorsRef}
                   onChange={(e) => {
                     const target = e.target.value;
-                    if (target.slice(-1) == " ") {
-                      const val = target.trim();
-                      // console.log(target.slice(0, target.length-1));
-                      // console.log(val);
-                      if (target.trim()) {
-                        setActors([...actors, val]);
+                    if (target.slice(-1) === ",") { // Check for a comma
+                      const val = target.slice(0, -1).trim(); // Remove the comma and trim whitespace
+                      if (val) { // Ensure it's not empty
+                        setActors([...actors, val]); // Add the actor to the list
                       }
-                      actorsRef.current.value = "";
+                      actorsRef.current.value = ""; // Clear the input field
                     }
-                  }}
+                  }}                  
                 />
                 <span className="text-[10px] mx-1">
-                  enter space to submit name
+                  enter comma to submit name
                 </span>
                 {actors && (
                   <div className="flex flex-wrap w-full">

@@ -62,7 +62,8 @@ const EditMovie = () => {
       });
       toast.success("Movie updated");
       setTimeout(() => {
-        window.location.reload();
+        // window.location.reload();
+        window.location = 'http://localhost:5173/'
       }, 2000);
     } catch (error) {
       toast.error(error.message);
@@ -189,19 +190,18 @@ const EditMovie = () => {
                       ref={actorsRef}
                       onChange={(e) => {
                         const target = e.target.value;
-                        if (target.slice(-1) == " ") {
-                          const val = target.trim();
-                          if (target.trim()) {
-                            // setActors([...actors, val]);
+                        if (target.slice(-1) === ",") { // Check for a comma
+                          const val = target.slice(0, -1).trim(); // Remove the comma and trim whitespace
+                          if (val) {
                             const updatedActors = [...data.Actors, val];
                             setData({ ...data, Actors: updatedActors });
                           }
-                          actorsRef.current.value = "";
+                          actorsRef.current.value = ""; // Clear the input field
                         }
                       }}
                     />
                     <span className="text-[10px] mx-1">
-                      enter space to submit name
+                      enter comma to submit name
                     </span>
                     {data.Actors && (
                       <div className="flex flex-wrap w-full">

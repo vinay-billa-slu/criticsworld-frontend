@@ -5,12 +5,17 @@ import { useMovieContext } from "./ContextAPI";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [search, setSearch] = useState("");
 
   const navigate = useNavigate();
 
   var loggedIn = localStorage.getItem("loggedIn");
+  useEffect(() => {
+    if (loggedIn) {
+      setShow(true);
+    }
+  }, [loggedIn]); // Runs whenever userLoggedIn changes
   var token = localStorage.getItem("token");
   // var user = JSON.parse(localStorage.getItem("user"));
   var { user } = useMovieContext();
