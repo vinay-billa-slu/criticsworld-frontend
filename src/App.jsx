@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Profile from "./pages/Profile";
 import AddMovie from "./pages/AddMovie";
 import Page404 from "./pages/Page404";
 import Protected from "./components/Protected";
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/" element={<Protected />}>
           <Route path="/" element={<Home />} />
           <Route path="/details/:id/:title" element={<Details />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/search/:keyword" element={<Search />} />
         </Route>
 

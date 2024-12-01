@@ -53,9 +53,9 @@ const Footer = () => {
               </ul>
             </div> */}
             <p className="copyright">
-              &copy; 2023{" "}
+              &copy; 2024{" "}
               <a href="#" className="font-bold">
-                Movie Lover
+                Critics World
               </a>
               . All Rights Reserved
             </p>

@@ -34,7 +34,8 @@ const Profile = () => {
           localStorage.clear();
         }
         setTimeout(() => {
-          window.location.reload();
+          // window.location.reload();
+          window.location = 'http://localhost:5173/'
         }, 1000);
       })
       .catch((err) => {
