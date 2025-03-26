@@ -138,12 +138,12 @@ You can check out the deployed version of the project here:
 ## Credentials
 
 ### User Login:
-- Email: `user1@gmail.com`
+- Email: `user@gmail.com`
 - Password: `123456`
 
 ### Admin Login:
-- Email: `admin1@gmail.com`
-- Password: `admin_1`
+- Email: `admin@gmail.com`
+- Password: `123456`
 
 ## Technologies Used:
 - React: A JavaScript library for building user interfaces.
