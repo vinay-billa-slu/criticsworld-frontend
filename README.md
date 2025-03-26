@@ -155,16 +155,6 @@ You can check out the deployed version of the project here:
 - React: A JavaScript library for building user interfaces.
 - Vite: A fast build tool that offers fast refresh and an optimized development experience.
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
-
-## Installation Instructions
-
-### Prerequisites:
-- Node.js (v14.x or above)
-
-### Steps to run the project locally:
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
    
 ## Author 
     Vinay Billa
