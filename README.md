@@ -114,5 +114,51 @@ This project is a React-based frontend application built with Vite. It provides 
 
 2. Deploy the dist/ folder to your hosting provider.
 
+# CriticsWorld Frontend
+
+CriticsWorld is an interactive platform where users can post, edit, and delete movie reviews, and admins have special privileges to manage the movie database and moderate reviews.
+
+## Live Demo
+
+You can check out the deployed version of the project here:  
+[https://critics-world-frontend.vercel.app/](https://critics-world-frontend.vercel.app/)
+
+## Features
+
+### User Features:
+- Post Reviews: Users can write reviews for movies they have watched.
+- Edit Reviews: Users can edit their previously posted reviews.
+- Delete Reviews: Users can delete their reviews if necessary.
+- Profile Edit: Users can edit their profile information.
+
+### Admin Features:
+- Manage Movies: Admins can add or delete movies from the database.
+- Moderate Reviews: Admins can delete any inappropriate reviews posted by users.
+
+## Credentials
+
+### User Login:
+- Email: `user1@gmail.com`
+- Password: `123456`
+
+### Admin Login:
+- Email: `admin1@gmail.com`
+- Password: `admin_1`
+
+## Technologies Used:
+- React: A JavaScript library for building user interfaces.
+- Vite: A fast build tool that offers fast refresh and an optimized development experience.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+
+## Installation Instructions
+
+### Prerequisites:
+- Node.js (v14.x or above)
+
+### Steps to run the project locally:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   
 ## Author 
     Vinay Billa
