@@ -44,6 +44,7 @@ This project is a React-based frontend application built with Vite. It provides 
     import axios from "axios";
 
 6. Routing
+   ```
     The application uses React Router for navigation. Below are the main routes:
         /signin: Login page.
         /signup: Registration page.
@@ -56,8 +57,10 @@ This project is a React-based frontend application built with Vite. It provides 
         /addmovie: Admin-only route to add a movie.
         /editMovie/:id: Admin-only route to edit a movie.
         *: 404 page.
+   ```
 
-7. Project Structure
+8. Project Structure
+   ```
     .gitignore
     Dockerfile
     [index.html](http://_vscodecontentref_/0)
@@ -99,12 +102,15 @@ This project is a React-based frontend application built with Vite. It provides 
         ForgotPassword.jsx
         Search.jsx
         Page404.jsx
+   ```
 
-8. Scripts
+10. Scripts
+    ```
     npm run dev: Start the development server.
     npm run build: Build the project for production.
     npm run preview: Preview the production build.
     npm run lint: Run ESLint to check for code quality.
+    ```
 
 ##**Deployment**##
 
