@@ -25,7 +25,7 @@ This project is a React-based frontend application built with Vite. It provides 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/criticsworld-frontend.git
+   git clone https://github.com/vinay-billa-slu/criticsworld-frontend.git
    cd criticsworld-frontend
 
 
